@@ -1,13 +1,17 @@
 {
-    "name": "bae-nodejs",
-    "version": "1.0.0",
-    "author": "bae",
-    "description": "The first bae nodejs app!",
-    "scripts": {
-        "start": "node app.js"
-    },
-    "dependencies": {
-        "express": "^4.12.3",
-        "wechat": "^1.2.4"
-    }
+  "name": "bae-nodejs",
+  "version": "1.0.0",
+  "author": "bae",
+  "description": "The first bae nodejs app!",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "ejs": "^2.3.1",
+    "express": "^4.12.3",
+    "fs": "0.0.2",
+    "less": "^2.5.0",
+    "path": "^0.11.14",
+    "wechat": "^1.2.4"
+  }
 }

@@ -1,0 +1,22 @@
+<!doctype html>
+
+<html>
+<head>
+    <meta charset='utf8'>
+    <title> <%= term %> | Lingpedia </title>
+    <link rel='stylesheet' href='../static/style.css'>
+</head>
+<body>
+    <h1> <%= term %> </h1>
+    <p>  <%= desc %> </p>
+    <div>
+        <p>
+            <% for(var i=0; i<articles.length; i++) {%>
+                <a href=<%= articles[i].url %>><%= articles[i].title %></a>
+                <p> <%= articles[i].date %> </p>
+            <% } %>
+        </p>
+    </div>
+</body>
+
+</html>
