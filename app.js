@@ -2,9 +2,9 @@ var express = require('express');
 var wechat = require('wechat');
 //do not upload to github, find it on trello
 var wechatConfig = {
-  token: 'weixin',
+  token: '69b7d4655fb62b2263d313efbc1d3a3a',
   appid: 'wx47201bcf25891a49',
-  encodingAESKey: ''
+  encodingAESKey: 'jehaC8aZVEGXOPKmUeVbfoAfiUBK20IB5vDqnaEdvMV'
 };
 
 var app = express();
