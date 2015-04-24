@@ -13,7 +13,7 @@ app.use(express.query());
 app.use('/wechat', wechat(wechatConfig, function (req, res, next) {
   // 微信输入信息都在req.weixin上
   var message = req.weixin;
-  var text = message.MsgType;
+  var text = message.Content;
   res.reply(text);
   // if (message.FromUserName === 'diaosi') {
   //   // 回复屌丝(普通回复)
