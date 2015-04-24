@@ -14,7 +14,7 @@ app.use('/wechat', wechat(wechatConfig, function (req, res, next) {
   // 微信输入信息都在req.weixin上
   var message = req.weixin;
   var text = message.Content;
-  if (text === '')
+  if (text === 'what')
   res.reply([
   {
     title: '齿龈闪音',
