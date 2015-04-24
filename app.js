@@ -14,7 +14,15 @@ app.use('/wechat', wechat(wechatConfig, function (req, res, next) {
   // 微信输入信息都在req.weixin上
   var message = req.weixin;
   var text = message.Content;
-  res.reply(text);
+  if (text === '')
+  res.reply([
+  {
+    title: '齿龈闪音',
+    description: '这是女神与高富帅之间的对话',
+    picurl: 'http://nodeapi.cloudfoundry.com/qrcode.jpg',
+    url: 'http://nodeapi.cloudfoundry.com/'
+  }
+]);
   // if (message.FromUserName === 'diaosi') {
   //   // 回复屌丝(普通回复)
   //   res.reply('hehe');
