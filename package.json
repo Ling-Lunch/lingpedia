@@ -4,9 +4,10 @@
     "author": "bae",
     "description": "The first bae nodejs app!",
     "scripts": {
-        "start": "node server.js"
+        "start": "node app.js"
     },
     "dependencies": {
+        "express": "^4.12.3",
+        "wechat": "^1.2.4"
     }
 }
-
