@@ -66,7 +66,7 @@ app.use('/wechat', wechat(wechatConfig, function (req, res, next) {
       {
         title: '机器翻译',
         description: 'Lingpedia',
-        picurl: 'http://mp.weixin.qq.com/s?__biz=MjM5MTA5MjcxMA==&mid=203900983&idx=1&sn=cedcf5c5f458193b8170bd688b02093d&3rd=MzA3MDU4NTYzMw==&scene=6#rd',
+        picurl: 'http://img01.store.sogou.com/net/a/04/link?appid=100520031&url=http://mmbiz.qpic.cn/mmbiz/GIhWrtDH6qcwSQyAxcT7GPwibtbHwyZBCFEx09NfSkpwGCbM1oA4kicHsnibUf7CquibVvIe1NRnclgwqEl2vO3gBg/0',
         url: 'http://lingpedia.duapp.com/baike/机器翻译'
       }
     ]);
