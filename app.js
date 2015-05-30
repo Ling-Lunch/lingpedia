@@ -1,7 +1,20 @@
 var express = require('express');
 var wechat = require('wechat');
 var path = require('path');
+var mongoose = require('mongoose');
 //do not upload to github, find it on trello
+
+mongoose.connect('mongodb://ronfe:buguan372101@ds034878.mongolab.com:34878/lingpedia');
+
+var db = mongoose.connection;
+db.on('error', console.error.bind(console, 'connection error:'));
+db.once('open', function (callback) {
+  // yay!
+  console.log('db connected!');
+});
+
+var articleSchema = mongoose
+
 var wechatConfig = {
   token: 'weixin',
   appid: 'wx198140923ff72506',
